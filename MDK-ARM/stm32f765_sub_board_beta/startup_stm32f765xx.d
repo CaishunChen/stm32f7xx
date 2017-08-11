@@ -1,1 +1,0 @@
-stm32f765_sub_board_beta\startup_stm32f765xx.o: startup_stm32f765xx.s
