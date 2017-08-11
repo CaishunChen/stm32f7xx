@@ -35,6 +35,6 @@
 "stm32f765_sub_board_beta\bsp_qspi_n25q.o"
 "stm32f765_sub_board_beta\spi_handle.o"
 --library_type=microlib --strict --scatter "stm32f765_sub_board_beta\stm32f765_sub_board_beta.sct"
---diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "stm32f765_sub_board_beta.map" -o stm32f765_sub_board_beta\stm32f765_sub_board_beta.axf
