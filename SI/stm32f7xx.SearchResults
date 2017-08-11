@@ -1,0 +1,5 @@
+---- HAL_Delay Matches (4 in 0 files) ----
+Stm32f7xx_hal.c (e:\童光强\2017-08\nv\sub_board_beta\stm32f765_sub_board_beta\drivers\stm32f7xx_hal_driver\src):             time intervals. Care must be taken if HAL_Delay() is called from a 
+Stm32f7xx_hal.c (e:\童光强\2017-08\nv\sub_board_beta\stm32f765_sub_board_beta\drivers\stm32f7xx_hal_driver\src):  * @note   SysTick is used as time base for the HAL_Delay() function, the application
+Stm32f7xx_hal.c (e:\童光强\2017-08\nv\sub_board_beta\stm32f765_sub_board_beta\drivers\stm32f7xx_hal_driver\src):  *       Care must be taken if HAL_Delay() is called from a peripheral ISR process, 
+Stm32f7xx_hal.c (e:\童光强\2017-08\nv\sub_board_beta\stm32f765_sub_board_beta\drivers\stm32f7xx_hal_driver\src):__weak void HAL_Delay(__IO uint32_t Delay)

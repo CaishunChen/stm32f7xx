@@ -1541,16 +1541,16 @@ Image Symbol Table
     ../Src/usart.c                           0x00000000   Number         0  usart.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.c 0x00000000   Number         0  stm32f7xx_hal.o ABSOLUTE
@@ -1585,6 +1585,7 @@ Image Symbol Table
     ..\Src\usart.c                           0x00000000   Number         0  usart.o ABSOLUTE
     ..\User\bsp_qspi_n25q.c                  0x00000000   Number         0  bsp_qspi_n25q.o ABSOLUTE
     ..\User\sdram.c                          0x00000000   Number         0  sdram.o ABSOLUTE
+    ..\User\spi_handle.c                     0x00000000   Number         0  spi_handle.o ABSOLUTE
     ..\User\uart.c                           0x00000000   Number         0  uart.o ABSOLUTE
     ..\\User\\bsp_qspi_n25q.c                0x00000000   Number         0  bsp_qspi_n25q.o ABSOLUTE
     ..\\User\\sdram.c                        0x00000000   Number         0  sdram.o ABSOLUTE
@@ -1955,17 +1956,17 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x000001f8   Data   RO         4192    RESET               startup_stm32f765xx.o
-    0x080001f8   0x00000000   Code   RO         4436  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080001f8   0x00000004   Code   RO         4441    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080001fc   0x00000004   Code   RO         4444    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000200   0x00000000   Code   RO         4446    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000200   0x00000000   Code   RO         4448    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000200   0x00000008   Code   RO         4449    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000208   0x00000000   Code   RO         4451    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000208   0x00000000   Code   RO         4453    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000208   0x00000004   Code   RO         4442    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001f8   0x00000000   Code   RO         4445  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080001f8   0x00000004   Code   RO         4450    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080001fc   0x00000004   Code   RO         4453    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000200   0x00000000   Code   RO         4455    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000200   0x00000000   Code   RO         4457    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000200   0x00000008   Code   RO         4458    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000208   0x00000000   Code   RO         4460    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000208   0x00000000   Code   RO         4462    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000208   0x00000004   Code   RO         4451    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800020c   0x00000024   Code   RO         4193    .text               startup_stm32f765xx.o
-    0x08000230   0x00000024   Code   RO         4455    .text               mc_w.l(init.o)
+    0x08000230   0x00000024   Code   RO         4464    .text               mc_w.l(init.o)
     0x08000254   0x00000002   Code   RO          343    i.BusFault_Handler  stm32f7xx_it.o
     0x08000256   0x00000002   Code   RO          344    i.DebugMon_Handler  stm32f7xx_it.o
     0x08000258   0x0000005e   Code   RO          699    i.FMC_SDRAM_Init    stm32f7xx_ll_fmc.o
@@ -2060,14 +2061,14 @@ Memory Map of the image
     0x08002520   0x00000064   Code   RO         1349    i.UART_WaitOnFlagUntilTimeout  stm32f7xx_hal_uart.o
     0x08002584   0x00000002   Code   RO          354    i.UsageFault_Handler  stm32f7xx_it.o
     0x08002586   0x00000002   Code   RO          480    i._Error_Handler    main.o
-    0x08002588   0x0000000e   Code   RO         4459    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08002596   0x00000002   Code   RO         4460    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08002598   0x0000000e   Code   RO         4461    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08002588   0x0000000e   Code   RO         4468    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08002596   0x00000002   Code   RO         4469    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08002598   0x0000000e   Code   RO         4470    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080025a6   0x00000002   PAD
     0x080025a8   0x000000b0   Code   RO          481    i.main              main.o
     0x08002658   0x00000010   Data   RO         4157    .constdata          system_stm32f7xx.o
     0x08002668   0x00000008   Data   RO         4158    .constdata          system_stm32f7xx.o
-    0x08002670   0x00000020   Data   RO         4457    Region$$Table       anon$$obj.o
+    0x08002670   0x00000020   Data   RO         4466    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000009a8, Max: 0x00080000, ABSOLUTE)
