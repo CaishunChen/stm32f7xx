@@ -30,6 +30,9 @@
 "stm32f765_sub_board_beta\stm32f7xx_hal_pwr.o"
 "stm32f765_sub_board_beta\system_stm32f7xx.o"
 "stm32f765_sub_board_beta\startup_stm32f765xx.o"
+"stm32f765_sub_board_beta\sdram.o"
+"stm32f765_sub_board_beta\uart.o"
+"stm32f765_sub_board_beta\bsp_qspi_n25q.o"
 --library_type=microlib --strict --scatter "stm32f765_sub_board_beta\stm32f765_sub_board_beta.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -46,7 +46,9 @@
 #include "fmc.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "uart.h"
+#include "sdram.h"
+#include "bsp_qspi_n25q.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
